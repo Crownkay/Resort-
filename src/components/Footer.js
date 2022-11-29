@@ -25,7 +25,7 @@ export default function Footer(){
         </div>
         <div className="row">
             <p>
-                Copyright &copy; 2020 by Adekola. All right reserved.
+                Copyright &copy; 2022 by Adekola. All right reserved.
             </p>
         </div>
     </footer>
