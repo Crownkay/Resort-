@@ -14,11 +14,11 @@ export default class Testimonies extends Component {
           <div className="col span-1-of-3">
           <cite>
               <img src={customer1} alt="Alberto Duncan" />
-              <p>Alberto Duncan</p>
+              <p>Adeniran Adekola</p>
             </cite>
             <blockquote>
-              Omnifood is just awesome! I just launched a startup which leaves
-              me with no time for cooking, so Omnifood is a life-saver. Now that
+              The Resort is just awesome! I just launched a startup which leaves
+              me with no time for cooking, so The Resort is a life-saver. Now that
               I got used to it, I couldn't live without my daily meals!
             </blockquote>
           </div>
