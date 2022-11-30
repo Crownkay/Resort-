@@ -1,19 +1,20 @@
 import React, { Component } from "react";
-import logo from '../images/logo.jpg'
+// import logo from '../images/ck.png'
 import { FaAlignRight } from 'react-icons/fa'
 import { Link } from 'react-router-dom'
 
 
 export default class Navbar extends Component {
     state = { isOpen: false }
-    handleToggle = () => {this.setState({ isOpen: !this.state.isOpen }); {/*this will set the state true i.e will change isOpen to true*/ }}
+    handleToggle = () => {this.setState({ isOpen: !this.state.isOpen });
+}
     render() {
         return (
             <nav className='navbar'>
                 <div className='nav-center'>
                     <div className='nav-header'>
                         <Link to='/' >
-                            <img src={logo} alt="Beach Resort" />
+                            <h4>CROWNKAY</h4>
                         </Link>
                         <button type='button' className='nav-btn' onClick={this.handleToggle}>
                             <FaAlignRight className='nav-icon' />

@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Public+Sans:wght@300;400;500;600;700;900&display=swap');
+
+
 * {
   margin: 0;
   padding: 0;
@@ -20,7 +23,7 @@ body {
   padding-top: 66px;
   color: var(--mainBlack);
   background: var(--mainWhite);
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: 'Poppins', sans-serif;
   line-height: 1.4;
 }
 h1 {
@@ -104,7 +107,7 @@ h6 {
   top: 0;
   left: 0;
   width: 100%;
-  padding: 0.75rem 2rem;
+  padding: 2rem;
   background: var(--offWhite);
   z-index: 1;
 }
@@ -112,12 +115,22 @@ h6 {
   display: flex;
   justify-content: space-between;
 }
+.nav-header a {
+  text-decoration: none;
+  color: var(--primaryColor);
+  transition: var(--mainTransition);
+}
+.nav-header h4{
+  
+  margin-bottom: 0;
+}
 .nav-btn {
   background: transparent;
   border: none;
   cursor: pointer;
   outline: none;
 }
+
 .nav-icon {
   font-size: 1.5rem;
   color: var(--primaryColor);
@@ -128,10 +141,10 @@ h6 {
   transition: var(--mainTransition);
   list-style-type: none;
 }
-.nav-links a {
+.nav-links a{
   display: block;
   text-decoration: none;
-  padding: 1rem 0;
+  padding: 0.5rem 0;
   color: var(--mainBlack);
   transition: var(--mainTransition);
   text-align: center;
@@ -154,6 +167,8 @@ h6 {
     max-width: 1170px;
     margin: 0 auto;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
   .nav-links {
     height: auto;
