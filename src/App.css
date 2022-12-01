@@ -564,12 +564,12 @@ h6 {
 }
 
 blockquote {
+  width: 80%;
   padding: 2%;
   font-style: italic;
-  line-height: 145%;
   position: relative;
+  margin: 0 auto;
   margin-top: 20px;
-  font-family: "Helvetica", Arial, Helvetica, sans-serif;
 }
 
 cite {
@@ -582,6 +582,7 @@ cite img {
   height: 200px;
   margin-right: 10px;
   vertical-align: middle;
+  border-radius: 50%;
 }
 
 cite img p {
@@ -705,7 +706,6 @@ footer p {
   padding: 10px;
   display: flex;
   font-size: 14px;
-  font-family: "Helvetica", arial, sans-serif;
   line-height: 18px;
 }
 

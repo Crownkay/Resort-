@@ -1,13 +1,26 @@
 import React from "react";
-// import customer1 from '../images/customer-1.jpg'
-// import customer2 from '../images/customer-2.jpg'
-// import customer3 from '../images/customer-3.jpg'
-
-import ReviewSection from "./ReviewSection";
+import Ratings from "../testiomyDb";
 
 export default function Testimonies() {
- 
-  return(
-    <ReviewSection />
-  )
+  const myRating = Ratings.map((review) => {
+    return (
+      <div className="col span-1-of-3" key={review.id}>
+        <cite>
+          <img src={review.img} alt="Alberto Duncan" />
+          <p>{review.name}</p>
+        </cite>
+        <blockquote>{review.message}</blockquote>
+      </div>
+    );
+  });
+  return (
+    <section className="section-testimonals services ">
+      <div className="row">
+        <h2 className="testimonial-h2">Our customers can't live without us</h2>
+      </div>
+      <div className="services-center">
+        <div className="row">{myRating}</div>
+      </div>
+    </section>
+  );
 }
